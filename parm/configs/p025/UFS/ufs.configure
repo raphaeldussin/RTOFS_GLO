@@ -26,7 +26,7 @@ ATM_omp_num_threads:            1
 ATM_attributes::
   Verbosity = 0
   DumpFields = false
-  mesh_atm  = mesh.datm.1536x768.nc
+  mesh_atm = mesh.datm.era5.nc
   diro = "."
   logfile = atm.log
   stop_n = 24

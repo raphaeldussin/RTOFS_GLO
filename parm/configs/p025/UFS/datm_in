@@ -6,10 +6,10 @@
   flds_presaero = .false.
   flds_wiso = .false.
   iradsw = 1
-  model_maskfile = "INPUT/mesh.datm.1536x768.nc"
-  model_meshfile = "INPUT/mesh.datm.1536x768.nc"
-  nx_global = 1536
-  ny_global = 768
+  model_maskfile = "INPUT/mesh.datm.era5.nc"
+  model_meshfile = "INPUT/mesh.datm.era5.nc"
+  nx_global = 1440
+  ny_global = 721
   restfilm = "null"
   export_all = .false.
 /

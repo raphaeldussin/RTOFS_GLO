@@ -17,8 +17,8 @@ case "${machine}" in
         FORCING_FILE="${INPUTDATA_ROOT}/DATM_CDEPS/GEFS_NEW/201110/gefs.201110.nc"
         ;;
     "ursa")
-        INPUTDATA_ROOT="/scratch4/NAGAPE/epic/role-epic/UFS-WM_RT/NEMSfv3gfs/input-data-20260617"
-        FORCING_FILE="${INPUTDATA_ROOT}/DATM_CDEPS/GEFS_NEW/201110/gefs.201110.nc"
+        INPUTDATA_ROOT="/scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS"
+        FORCING_FILE="${INPUTDATA_ROOT}/era5_forcing_y2011m10d01.nc"
         ;;
     *)
         echo "FATAL: Unknown target machine ${machine}"

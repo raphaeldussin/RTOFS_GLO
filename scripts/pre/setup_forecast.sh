@@ -36,7 +36,7 @@ if [[ -z "${FORCING_FILE:-}" ]]; then
     exit 1
 fi
 
-ln -sf "${DATM_FIX_DIR}/${MESH_ATM}" "./INPUT/${MESH_ATM}"
+ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/mesh.datm.era5.nc ./INPUT/mesh.datm.era5.nc
 ln -sf "${FORCING_FILE}" "./INPUT/$(basename "${FORCING_FILE}")"
 
 echo ">>> Symlinking explicit MOM6 fixed inputs for resolution ${OCNRES}..."
