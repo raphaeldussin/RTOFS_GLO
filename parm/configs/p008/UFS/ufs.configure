@@ -28,7 +28,7 @@ ATM_omp_num_threads:            1
 ATM_attributes::
   Verbosity = 0
   DumpFields = false
-  mesh_atm  = INPUT/mesh.datm.3072x1536.nc
+  mesh_atm = INPUT/mesh.datm.era5.nc
   diro = "."
   logfile = atm.log
   stop_n = 24
@@ -117,9 +117,9 @@ MED_attributes::
       pio_stride = 4
       pio_rearranger = box
       pio_root = -99
-      map_a2oi_bilnr = map.3072x1536.to.mx008.bilnr.nc
-      map_a2oi_patch = map.3072x1536.to.mx008.patch.nc
-      map_a2oi_consf = map.3072x1536.to.mx008.consf.nc
+      map_a2oi_bilnr = map.era5.mx008.bilin.nc
+      map_a2oi_patch = map.era5.mx008.patch.nc
+      map_a2oi_consf = map.era5.mx008.conserve.nc
 ::
 
 ALLCOMP_attributes::

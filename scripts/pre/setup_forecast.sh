@@ -63,9 +63,9 @@ elif [[ "$OCNRES" == "008" ]]; then
 
     # --- Symlink the 0.08 mapping files directly from DATM_FIX_DIR ---
     echo ">>> Symlinking 0.08-degree mediator mapping files..."
-    ln -sf "${DATM_FIX_DIR}/map.3072x1536.to.mx008.bilnr.nc" ./
-    ln -sf "${DATM_FIX_DIR}/map.3072x1536.to.mx008.consf.nc" ./
-    ln -sf "${DATM_FIX_DIR}/map.3072x1536.to.mx008.patch.nc" ./
+    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.bilin.nc ./
+    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.conserve.nc ./
+    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.patch.nc ./
 
 else
     echo "ERROR: Unknown OCNRES: $OCNRES."

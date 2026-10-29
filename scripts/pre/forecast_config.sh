@@ -12,8 +12,8 @@ source "${UFSsrc}/tests/detect_machine.sh"
 # ==========================================
 # 2. Component Resolutions & Data Sources
 # ==========================================
-#OCNRES="008"
-OCNRES="025"
+OCNRES="008"
+#OCNRES="025"
 ICERES="${OCNRES:0:1}.${OCNRES:1}"
 DATM_SRC="GEFS"
 
@@ -50,7 +50,7 @@ if [[ "$OCNRES" == "025" && "$DATM_SRC" == "GEFS" ]]; then
     MESH_ATM="mesh.datm.era5.nc"
     TOTAL_TASKS=256
 elif [[ "$OCNRES" == "008" && "$DATM_SRC" == "GEFS" ]]; then
-    MESH_ATM="mesh.datm.3072x1536.nc"
+    MESH_ATM="mesh.datm.era5.nc"
     TOTAL_TASKS=2560
 fi
 

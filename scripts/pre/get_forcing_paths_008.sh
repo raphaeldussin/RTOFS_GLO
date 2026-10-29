@@ -9,7 +9,8 @@ machine=$(echo "${MACHINE_ID}" | cut -d. -f1)
 
 case "${machine}" in
     "ursa")
-        FORCING_FILE="/scratch5/NCEPDEV/rstprod/Santha.Akella/data/forcing/zg/gfs.2025121400-2025123118_positive.nc"
+        INPUTDATA_ROOT="/scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS"
+        FORCING_FILE="${INPUTDATA_ROOT}/era5_forcing_y2011m10d01.nc"
         ;;
     "acorn")
         FORCING_FILE="/lfs/h1/emc/couple/noscrub/santha.akella/data/forcing/zg/gfs.2025121400-2025123118_positive.nc"
