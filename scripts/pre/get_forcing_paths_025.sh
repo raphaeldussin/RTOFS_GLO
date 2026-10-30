@@ -9,16 +9,16 @@ machine=$(echo "${MACHINE_ID}" | cut -d. -f1)
 
 case "${machine}" in
     "wcoss2" | "acorn")
-        INPUTDATA_ROOT="/lfs/h2/emc/nems/noscrub/emc.nems/RT/NEMSfv3gfs/input-data-20260617"
-        FORCING_FILE="${INPUTDATA_ROOT}/DATM_CDEPS/GEFS_NEW/201110/gefs.201110.nc"
+        FORCING_ROOT="/lfs/h2/emc/nems/noscrub/emc.nems/RT/NEMSfv3gfs/input-data-20260617"
+        FORCING_FILE="${FORCING_ROOT}/DATM_CDEPS/GEFS_NEW/201110/gefs.201110.nc"
         ;;
     "orion" | "hercules")
-        INPUTDATA_ROOT="/work/noaa/epic/UFS-WM_RT/NEMSfv3gfs/input-data-20251015"
-        FORCING_FILE="${INPUTDATA_ROOT}/DATM_CDEPS/GEFS_NEW/201110/gefs.201110.nc"
+	FORCING_ROOT="/work/noaa/marine/rdussin/datasets/ERA5/forcing_UFS"
+        FORCING_FILE="${FORCING_ROOT}/era5_forcing_y2011m10d01.nc"
         ;;
     "ursa")
-        INPUTDATA_ROOT="/scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS"
-        FORCING_FILE="${INPUTDATA_ROOT}/era5_forcing_y2011m10d01.nc"
+        FORCING_ROOT="/scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS"
+        FORCING_FILE="${FORCING_ROOT}/era5_forcing_y2011m10d01.nc"
         ;;
     *)
         echo "FATAL: Unknown target machine ${machine}"

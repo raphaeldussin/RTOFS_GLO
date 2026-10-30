@@ -1,17 +1,17 @@
 &setup_nml
     days_per_year       = 365
     use_leap_years      = .true.
-    year_init           = 2025
-    month_init          = 12
-    day_init            = 15
+    year_init           = 2011
+    month_init          = 10
+    day_init            = 01
     sec_init            = 00000
     dt                  = 360
     npt                 = 999
     ndtd                = 1
-    runtype             = 'continue'
+    runtype             = 'initial'
     runid               = 'unknown'
     ice_ic              = 'RESTART/iced.2025-12-15-00000.nc'
-    restart             = .true.
+    restart             = .false.
     restart_ext         = .false.
     use_restart_time    = .false.
     numin               = 21

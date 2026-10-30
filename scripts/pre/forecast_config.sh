@@ -35,7 +35,7 @@ elif [[ "$MACHINE_ID" == "acorn" ]]; then
 elif [[ "$MACHINE_ID" == "ursa" ]]; then
     SANDBOX_DIR="/scratch4/NCEPDEV/stmp/${USER}/EXPDIR/p${OCNRES}"
 elif [[ "$MACHINE_ID" == "orion" || "$MACHINE_ID" == "hercules" ]]; then
-    SANDBOX_DIR="/work2/noaa/stmp/${USER}/EXPDIR/${MACHINE_ID}/p${OCNRES}"
+    SANDBOX_DIR="/work/noaa/stmp/${USER}/EXPDIR/${MACHINE_ID}/p${OCNRES}"
 else
     echo "ERROR: Unsupported MACHINE_ID detected: $MACHINE_ID"
     exit 1

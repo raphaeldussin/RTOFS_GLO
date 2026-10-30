@@ -4,7 +4,7 @@
 
 # ESMF #
 #logKindFlag:            ESMF_LOGKIND_MULTI_ON_ERROR
-#logKindFlag:            ESMF_LOGKIND_SINGLE
+#logKindFlag:            ESMF_LOGKIND_MULTI
 logKindFlag:            ESMF_LOGKIND_NONE
 globalResourceControl:  true
 
@@ -107,6 +107,10 @@ MED_attributes::
       ATM_model = datm
       ICE_model = cice6
       OCN_model = mom6
+      history_n_atm_inst = 1
+      history_option_atm_inst = nhours
+      history_n_ice_inst = 1
+      history_option_ice_inst = nhours
       history_n = 1
       history_option = nhours
       history_ymd = -999

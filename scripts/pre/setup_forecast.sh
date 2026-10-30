@@ -36,7 +36,7 @@ if [[ -z "${FORCING_FILE:-}" ]]; then
     exit 1
 fi
 
-ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/mesh.datm.era5.nc ./INPUT/mesh.datm.era5.nc
+ln -sf ${FORCING_ROOT}/mesh.datm.era5.nc ./INPUT/mesh.datm.era5.nc
 ln -sf "${FORCING_FILE}" "./INPUT/$(basename "${FORCING_FILE}")"
 
 echo ">>> Symlinking explicit MOM6 fixed inputs for resolution ${OCNRES}..."
@@ -63,9 +63,9 @@ elif [[ "$OCNRES" == "008" ]]; then
 
     # --- Symlink the 0.08 mapping files directly from DATM_FIX_DIR ---
     echo ">>> Symlinking 0.08-degree mediator mapping files..."
-    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.bilin.nc ./
-    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.conserve.nc ./
-    ln -sf /scratch4/NCEPDEV/marine/Raphael.Dussin/ERA5/forcing_UFS/map.era5.mx008.patch.nc ./
+    ln -sf ${FORCING_ROOT}/map.era5.mx008.bilin.nc ./
+    ln -sf ${FORCING_ROOT}/map.era5.mx008.conserve.nc ./
+    ln -sf ${FORCING_ROOT}/map.era5.mx008.patch.nc ./
 
 else
     echo "ERROR: Unknown OCNRES: $OCNRES."

@@ -4,7 +4,7 @@ mapalgo01:                 bilinear
 tInterpAlgo01:             linear
 readMode01:                single
 dtlimit01:                 1.0
-stream_offset01:           -21600
+stream_offset01:           0
 yearFirst01:               2011
 yearLast01:                2011
 yearAlign01:               2011
